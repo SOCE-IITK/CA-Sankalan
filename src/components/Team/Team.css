@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+
+
+.contact {
+  width: 100%;
+
+  background-size: cover;
+  background-position: top;
+  padding: 3%;
+  font-family: "'Montserrat', sans-serif";
+}
+
+.contact h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.3rem;
+}
+
+.contact h3 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.1rem;
+}
+
+.contact span {
+  color: cyan;
+}
+
+.contact h4 {
+  text-align: center;
+  color: white;
+  font-size: 34px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.15rem;
+}
+
+.contact .cards {
+  background: rgba(59, 116, 148, 0.3);
+  border: 3px solid #5764de;
+  border-radius: 20px;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  /* flex-wrap: wrap; */
+  padding: 4% 0;
+  overflow: hidden;
+  margin: 4% 0;
+  /* min-height: 220vh; */
+}
+
+.contact .inner-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-height: 65vh;
+  align-items: center;
+
+}
+
+.contact .card {
+  background-image: linear-gradient(#012a34, #040f1a, #03323d);
+  border: 0.5px solid #5764de;
+  height: 390px;
+  margin: 0 1.5vw;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  width: 21%;
+}
+
+.card .image {
+  /* border: 2px solid red; */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  /* text-align: center; */
+  margin: 20px auto;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+.card .image img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.card .text {
+  margin-top: 10px;
+  /* border: 2px solid yellow; */
+  text-align: center;
+  color: white;
+}
+
+.card .text .name {
+  font-size: 25px;
+  margin: 6px 0;
+}
+
+.card .text .no {
+  font-size: 18px;
+  margin: 3px 0;
+}
+
+.card .text .email {
+  font-size: 18px;
+}
+
+.card .fa {
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+.card .links {
+  /* border: 2px solid green; */
+  height: 50px;
+}
+
+.card .links {
+  color: white;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  /* width: 100%; */
+}
+
+.links a {
+  padding: 0 5px !important;
+}
+
+.card .links .fa {
+  padding: 0;
+  margin: 0 3%;
+  font-size: 1.9rem;
+}
+
+.card .links a {
+  color: white;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.fa-facebook:hover {
+  /* border: 2px solid black; */
+  /* border-radius: 50%; */
+  /* padding: 10px; */
+  /* box-shadow: ; */
+}
+
+.contact .card:hover {
+  transform: scale(1.05);
+  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 #5764de;
+
+}
+
+@media screen and (max-width: 768px) {
+  .contact .card {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .contact h3 {
+    font-size: 30px;
+  }
+}
