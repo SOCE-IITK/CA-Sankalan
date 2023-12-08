@@ -14,44 +14,44 @@
 .contact h1 {
   text-align: center;
   color: white;
-  font-size: 45px;
-  margin: 2%;
-  margin-bottom: 4%;
-  letter-spacing: 0.3rem;
+  font-size: 30px;
+  margin: 1%;
+  /* margin-bottom: 4%; */
+  letter-spacing: 0.05rem;
 }
 
 .contact h3 {
   text-align: center;
-  color: white;
-  font-size: 35px;
+  color: rgb(211, 211, 211);
+  font-size: 20px;
   margin: 2%;
-  margin-bottom: 4%;
-  letter-spacing: 0.1rem;
+  margin-bottom: 2%;
+  letter-spacing: 0.05rem;
 }
 
 .contact span {
-  color: cyan;
+  color: rgb(211, 211, 211);
 }
 
 .contact h4 {
   text-align: center;
   color: white;
-  font-size: 34px;
+  font-size: 20px;
   margin: 2%;
   margin-bottom: 4%;
   letter-spacing: 0.15rem;
 }
 
 .contact .cards {
-  background: rgba(59, 116, 148, 0.3);
-  border: 3px solid #5764de;
+  /* background: rgba(59, 116, 148, 0.3);  */
+  /* border: 3px solid rgba(133, 133, 133, 0.5); */
   border-radius: 20px;
   /* display: flex; */
   /* justify-content: space-evenly; */
   /* flex-wrap: wrap; */
-  padding: 4% 0;
+  padding: 2% 0;
   overflow: hidden;
-  margin: 4% 0;
+  margin-top: -40px;
   /* min-height: 220vh; */
 }
 
@@ -59,20 +59,20 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  min-height: 65vh;
+  min-height: 40vh;
+
   align-items: center;
 
 }
 
 .contact .card {
-  background-image: linear-gradient(#012a34, #040f1a, #03323d);
-  border: 0.5px solid #5764de;
-  height: 390px;
-  margin: 0 1.5vw;
+  background-image: linear-gradient(#040f1a, #040f1a, #040f1a);
+  height: 320px;
+  margin: 1vw;
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
-  width: 21%;
+  width: 20%;
 }
 
 .card .image {
@@ -80,7 +80,7 @@
   width: 200px;
   height: 200px;
   overflow: hidden;
-  /* text-align: center; */
+  text-align: center;
   margin: 20px auto;
   border-radius: 50%;
   margin-bottom: 0;
@@ -95,21 +95,26 @@
   margin-top: 10px;
   /* border: 2px solid yellow; */
   text-align: center;
-  color: white;
+  color: rgb(211, 211, 211);
 }
 
 .card .text .name {
-  font-size: 25px;
+  font-size: 18px;
   margin: 6px 0;
 }
 
 .card .text .no {
-  font-size: 18px;
-  margin: 3px 0;
+  font-size: 12px;
+  margin: -1px;
+}
+
+i {
+  font-size: 12px;
 }
 
 .card .text .email {
   font-size: 18px;
+  margin-bottom: 3px;
 }
 
 .card .fa {
@@ -119,12 +124,12 @@
 
 .card .links {
   /* border: 2px solid green; */
-  height: 50px;
+  height: 80px;
 }
 
 .card .links {
-  color: white;
-  margin-top: 5px;
+  color: rgb(211, 211, 211);
+  margin-top: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +148,7 @@
 }
 
 .card .links a {
-  color: white;
+  color: rgb(211, 211, 211);
 }
 
 .fa-facebook:hover {
@@ -162,9 +167,9 @@
 }
 
 .contact .card:hover {
-  transform: scale(1.05);
-  border: 2px solid black;
-  box-shadow: 0 4px 8px 0 #5764de;
+  transform: scale(1.03);
+  /* border: 2px solid black; */
+  /* box-shadow: 0 4px 8px 0 rgb(24, 24, 24); */
 
 }
 

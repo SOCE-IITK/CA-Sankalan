@@ -5,8 +5,12 @@ import sections from "../../constants/data";
 const Portfolio = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleHover = () => {
-    setIsHovered(!isHovered);
+  const handleHover = (e) => {
+    if (e.type === "touchmove") {
+      setIsHovered(true); // set hovered state to true on touch move
+    } else {
+      setIsHovered(!isHovered);
+    }
   };
 
   return (
@@ -24,14 +28,15 @@ const Portfolio = () => {
                   className={`item flex flex-center flex-column translate-effect ${
                     isHovered ? "hovered" : ""
                   }`}
-                  key={portfolio.id}
                   onMouseEnter={handleHover}
                   onMouseLeave={handleHover}
                   onTouchStart={handleHover}
-                  onTouchEnd={handleHover}
+                  onTouchEnd={() => setIsHovered(false)}
+                  onTouchMove={handleHover}
                   style={{
                     background: `url(${portfolio.image})`,
                   }}
+                  key={portfolio.id}
                 >
                   <div className="item-title fs-25 fw-6">{portfolio.title}</div>
                   <div className="text text-white">{portfolio.text}</div>

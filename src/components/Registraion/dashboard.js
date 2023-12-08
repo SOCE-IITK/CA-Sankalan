@@ -21,7 +21,7 @@ const Container = styled.div`
 `;
 
 const Header = styled.h1`
-  margin-top: 20px;
+  margin-top: 65px;
 `;
 
 const TabsContainer = styled.div`
@@ -59,7 +59,7 @@ const ContentContainer = styled.div`
   overflow: auto; /* Enable horizontal scroll *
 
   @media (max-width: 768px) {
-    max-height: 60vh; /* Adjusted max-height for smaller screens */
+    max-height: 80vh; /* Adjusted max-height for smaller screens */
   }
 `;
 

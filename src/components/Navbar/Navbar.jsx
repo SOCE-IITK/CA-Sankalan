@@ -114,17 +114,18 @@ const Navbar = () => {
                       alignItems: "center",
                       transition: "background 0.3s ease",
                     }}
-                    onMouseOver={(e) => {
-                      e.target.parentElement.style.background = "#5764de";
-                      e.target.style.color = "white"; // Change text color on hover
-                    }}
-                    onMouseOut={(e) => {
-                      e.target.parentElement.style.background = "black";
-                      e.target.style.color = "white"; // Reset text color on mouse out
-                    }}
                   >
                     <IoMdRocket />
-                    <span>Register Here</span>
+                    <span
+                      style={{
+                        color: "white",
+                        transition: "color 0.3s ease",
+                      }}
+                      onMouseOver={(e) => (e.target.style.color = "#5764de")}
+                      onMouseOut={(e) => (e.target.style.color = "white")}
+                    >
+                      Register Here
+                    </span>
                   </div>
                 </Link>
               </div>

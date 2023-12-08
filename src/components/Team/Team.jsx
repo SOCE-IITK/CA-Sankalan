@@ -24,13 +24,14 @@ import aadya from "./Core-Team/aadya.jpg";
 import shambhavi from "./Core-Team/shambhavi.jpg";
 import vedant from "./Core-Team/vedant.jpg";
 import shubhamphd from "./Core-Team/shubhamphd.jpg";
+import About from "./../About/About";
 
 export default function Team() {
   const iconSize = 30;
   return (
     <>
       <section
-        className="contact"
+        className="contact "
         id="contact"
         style={{
           backgroundColor: "black",
@@ -39,22 +40,28 @@ export default function Team() {
           paddingBottom: "50px", // Adjust padding as needed
         }}
       >
-        <h1
-          style={{ "font-family": "'Montserrat', sans-serif" }}
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          CONTACT US
-        </h1>
-
         <div
           className="cards"
           style={{ "font-family": "'Montserrat', sans-serif" }}
           data-aos="fade-up"
           data-aos-delay="300"
         >
+          <h1
+            style={{
+              fontSize: "50px",
+              color: "var(--clr-white)",
+              padding: "20px 0",
+              lineHeight: "1.2",
+            }}
+          >
+            Contact Us
+          </h1>
+
           <div className="inner-card">
-            <div className="card" style={{ marginBottom: "20px" }}>
+            <div
+              className="card"
+              style={{ marginBottom: "20px", minHeight: "350px" }}
+            >
               <div className="image">
                 <img src={vedant} alt="" />
               </div>
@@ -89,49 +96,78 @@ export default function Team() {
                 </a>
               </div>
             </div>
-            <div className="card">
+            <div
+              className="card"
+              style={{ marginBottom: "20px", minHeight: "350px" }}
+            >
               <div className="image">
-                <img src="" alt="" />
+                <img src={shrey} alt="" />
               </div>
               <div className="text">
-                <p className="name">Vedant Adlak</p>
+                <p className="name">Shrey Patel</p>
 
-                <p className="email">
-                  <i> +91-7000305702</i>
+                <p className="no">
+                  <i>+91-9695970917</i>
                 </p>
               </div>
               <div className="links">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="mailto:shreypatel21@iitk.ac.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaEnvelope size={iconSize} />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/shrey-patel-830bb164/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedin size={iconSize} />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/shreypatel1408/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram size={iconSize} />
                 </a>
               </div>
             </div>
-            <div className="card">
+            <div
+              className="card"
+              style={{ marginBottom: "20px", minHeight: "350px" }}
+            >
               <div className="image">
-                <img src="" alt="" />
+                <img src={sandipan} alt="" />
               </div>
               <div className="text">
                 <p className="name">Sandipan Dutta</p>
 
-                <p className="email">
+                <p className="no">
                   <i>+91-7906379797</i>
                 </p>
               </div>
-
               <div className="links">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="mailto:sadipand21@iitk.ac.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaEnvelope size={iconSize} />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/sandipan-dutta-6a03b6237/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedin size={iconSize} />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/imsandipandutta03/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram size={iconSize} />
                 </a>
               </div>

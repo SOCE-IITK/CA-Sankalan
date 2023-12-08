@@ -6,6 +6,11 @@ import styled from "styled-components";
 
 const UnderlinedHeading = styled.h2`
   text-decoration: underline;
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    margin-top: 200px;
+  }
 `;
 
 const ProfileContent = ({ userData }) => {

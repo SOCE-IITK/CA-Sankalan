@@ -13,13 +13,10 @@ const Container = styled.div`
 `;
 
 const TableWrapper = styled.div`
-  overflow-x: auto; /* Add horizontal scroll */
-  max-width: 100%; /* Ensure the table wrapper can be smaller than the screen width */
+  max-width: 100%;
 
   @media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
     overflow-x: scroll; /* Enable horizontal scroll for smaller screens */
-    max-width: 100%; /* You can adjust this value based on your design */
   }
 `;
 
@@ -27,7 +24,7 @@ const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  min-width: 600px; /* Set a minimum width for the table */
+  overflow-x: scroll; /* Combine scroll with Table */
 `;
 
 const TableHeader = styled.th`
@@ -59,17 +56,17 @@ const LeaderboardContent = () => {
       if (snapshot.exists()) {
         const data = snapshot.val();
 
-        // Convert the data to an array and sort it by points in descending order
-        const sortedData = Object.entries(data).map(([userId, userData]) => {
-          // Extract the user data based on your structure
-          const userEntries = Object.entries(userData);
-          const user = userEntries.length > 0 ? userEntries[0][1] : null;
+        // Convert the data to an array and sort by points in descending order
+        const sortedData = Object.entries(data)
+          .map(([userId, userData]) => {
+            const userEntries = Object.entries(userData);
+            const user = userEntries.length > 0 ? userEntries[0][1] : null;
 
-          // Return an object with caid, name, and points
-          return user
-            ? { caid: user.caid, name: user.name, points: user.points }
-            : null;
-        });
+            return user
+              ? { caid: user.caid, name: user.name, points: user.points }
+              : null;
+          })
+          .sort((userA, userB) => userB.points - userA.points);
 
         // Filter out potential null values
         const filteredData = sortedData.filter((entry) => entry !== null);
@@ -89,7 +86,6 @@ const LeaderboardContent = () => {
               <TableHeader>Rank</TableHeader>
               <TableHeader>Name</TableHeader>
               <TableHeader>Points</TableHeader>
-              {/* <TableHeader>CA ID</TableHeader> */}
             </tr>
           </thead>
           <tbody>
@@ -98,7 +94,6 @@ const LeaderboardContent = () => {
                 <TableCell>{index + 1}</TableCell>
                 <TableCell>{entry.name}</TableCell>
                 <TableCell>{entry.points}</TableCell>
-                {/* <TableCell>{entry.caid}</TableCell> */}
               </TableRow>
             ))}
           </tbody>
