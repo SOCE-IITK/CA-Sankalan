@@ -5,7 +5,7 @@ import SingleService from "./SingleService";
 
 const Services = () => {
   return (
-    <section className="services section-p bg-md-black" id="services">
+    <section className="services section-p " id="services">
       <div
         className="container"
         style={{

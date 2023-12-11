@@ -10,9 +10,6 @@ const SingleService = ({ service }) => {
       <p className="fs-19 text" style={{ textAlign: "justify" }}>
         {service.text}
       </p>
-      <a href="/" className="item-link text-grey">
-        <BsArrowRightCircle size={30} />
-      </a>
     </div>
   );
 };

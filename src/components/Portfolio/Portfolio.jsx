@@ -14,11 +14,22 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="portfolio section-p bg-dark" id="portfolio">
+    <section className="portfolio section-p" id="portfolio">
       <div className="container">
         <div className="portfolio-content">
           <div className="section-t text-center">
-            <h3>What We Expect</h3>
+            <h3
+              style={{
+                fontSize: "40px",
+                fontWeight: "600",
+                lineHeight: "1.2",
+                background: "black",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              What We Expect
+            </h3>
           </div>
 
           <div className="item-list text-center text-white grid">
@@ -35,6 +46,7 @@ const Portfolio = () => {
                   onTouchMove={handleHover}
                   style={{
                     background: `url(${portfolio.image})`,
+                    backgroundSize: "cover",
                   }}
                   key={portfolio.id}
                 >

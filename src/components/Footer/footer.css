@@ -1,4 +1,8 @@
 /* footer.css */
+#footer {
+    background: url("../../assets/images/1.png") center/cover no-repeat;
+}
+
 a:link {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -9,19 +13,20 @@ a:visited {
     text-decoration: none;
     color: rgb(255, 255, 255);
 
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: none;
     color: #0C93DE;
 
-  }
-  
-  a:active {
+}
+
+a:active {
     text-decoration: none;
     color: rgb(255, 255, 255);
 
-  }
+}
+
 .footer-about {
     display: flex;
     flex-direction: column;
@@ -111,11 +116,11 @@ a:visited {
     .footer-p {
         margin-top: 1rem;
         display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100px;
-        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+
     }
-       
+
 }

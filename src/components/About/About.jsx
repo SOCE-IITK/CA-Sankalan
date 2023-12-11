@@ -5,17 +5,31 @@ import logo from "./sankalan-logo.png";
 
 const About = () => {
   return (
-    <section className="about section-p bg-dark" id="about">
+    <section className="about section-p" id="about">
       <div className="container">
         <div className="about-content grid text-center">
           <div className="content-left">
-            <img src={logo} alt="" />
+            <img src={logo} style={{ background: "black" }} alt="" />
           </div>
           <div className="content-right">
             <div className="section-t">
-              <h3>About Us</h3>
+              <h3
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "600",
+                  lineHeight: "1.2",
+                  background: "black",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                About Us
+              </h3>
             </div>
-            <p className="text" style={{ textAlign: "justify" }}>
+            <p
+              className="text"
+              style={{ textAlign: "justify", color: "black" }}
+            >
               The Civil Engineering Conclave Sankalan, organized by the Society
               of Civil Engineering, is a vibrant two-day event designed to
               assemble a diverse range of opportunities for knowledge exchange

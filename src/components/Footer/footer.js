@@ -12,8 +12,13 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div className="footer_component">
-      <footer>
+    <div
+      className="footer_component"
+      style={{ background: `url(${require("../../assets/images/1.png")})` }}
+    >
+      <footer
+        style={{ background: `url(${require("../../assets/images/1.png")})` }}
+      >
         <div className="container grid grid-two-column">
           {/* <motion.div
             className="footer-about"

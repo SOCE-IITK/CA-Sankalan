@@ -6,6 +6,10 @@
     transition: var(--transition);
 }
 
+#portfolio {
+    background: url("../../assets/images/5.png") center/cover no-repeat;
+}
+
 .portfolio .item * {
     z-index: 1;
 }
@@ -15,8 +19,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgb(87, 100, 222);
-    background: linear-gradient(45deg, rgba(87, 100, 222, 0.6) 0%, rgba(85, 179, 213, 0.7) 100%);
+    background: navy;
+    background: navy;
     left: 0;
     top: 0;
 }

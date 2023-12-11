@@ -79,7 +79,7 @@ const portfolio = [
   },
   {
     id: 18,
-    title: "Leading",
+    title: "Conducting",
     text: "Guide and oversee your college's involvement during the event to ensure a memorable conclave experience for all.",
     image: images.portfolio_img_3,
   },
