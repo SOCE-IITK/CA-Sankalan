@@ -26,7 +26,10 @@ const Services = () => {
             textAlign: "center",
           }}
         >
-          <h3>Why you should Apply ?</h3>
+          <h3 style={{ fontFamily: "'Open Sans', sans-serif" }}>
+            {" "}
+            Why you should Apply ?
+          </h3>
         </div>
 
         <div className="services-content">

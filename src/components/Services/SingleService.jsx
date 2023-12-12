@@ -4,10 +4,28 @@ import "./Services.css";
 
 const SingleService = ({ service }) => {
   return (
-    <div className="item bg-dark translate-effect">
-      <span className="item-icon">{service.icon}</span>
-      <h4 className="item-title fs-25">{service.title}</h4>
-      <p className="fs-19 text" style={{ textAlign: "justify" }}>
+    <div className="item translate-effect">
+      <span className="item-icon" style={{ fill: "brighter-color" }}>
+        {service.icon}
+      </span>
+      <h4
+        className="item-title fs-25"
+        style={{
+          fontFamily: "'Open Sans', sans-serif",
+          textDecoration: "underline",
+        }}
+      >
+        {service.title}
+      </h4>
+      <p
+        className="fs-19 text"
+        style={{
+          textAlign: "justify",
+          color: "whitesmoke",
+          fontFamily:
+            "SF Pro Display, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+        }}
+      >
         {service.text}
       </p>
     </div>

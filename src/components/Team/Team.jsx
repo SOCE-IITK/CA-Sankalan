@@ -38,20 +38,19 @@ export default function Team() {
           fontFamily: "'Montserrat', sans-serif",
           paddingTop: "50px", // Adjust padding as needed
           paddingBottom: "50px", // Adjust padding as needed
+          backgroundImage: `url(${require("../../assets/images/3.png")})`,
+          backgroundSize: "cover", // Make background image cover the container
+          backgroundPosition: "center",
         }}
       >
-        <div
-          className="cards"
-          style={{ "font-family": "'Montserrat', sans-serif" }}
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <div className="cards" data-aos="fade-up" data-aos-delay="300">
           <h1
             style={{
               fontSize: "50px",
               color: "var(--clr-white)",
               padding: "20px 0",
               lineHeight: "1.2",
+              fontFamily: "'Open Sans', sans-serif",
             }}
           >
             Contact Us

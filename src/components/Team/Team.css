@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 #contact {
-  background: url("../../assets/images/1.png");
+  background: url("../../assets/images/3.png") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact {
@@ -64,6 +66,7 @@
   margin: 1vw;
   transition: transform 0.3s ease-in-out;
   width: 20%;
+  z-index: 1;
 }
 
 .contact .card:hover {

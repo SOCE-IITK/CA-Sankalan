@@ -3,6 +3,8 @@
     cursor: pointer;
     transition: var(--transition);
     position: relative;
+    background: url("../../assets/images/ca-portal.png") center/cover no-repeat;
+    border-radius: 50px;
 }
 
 #services {
@@ -17,9 +19,9 @@
     transform: translateX(-50%);
     width: 0%;
     height: 5px;
-    background: rgb(87, 100, 222);
-    background: linear-gradient(45deg, rgba(87, 100, 222, 1) 0%, rgba(85, 179, 213, 1) 100%);
-    transition: var(--transition);
+    /* background: rgb(87, 100, 222);
+    background: linear-gradient(45deg, rgba(87, 100, 222, 1) 0%, rgba(85, 179, 213, 1) 100%); */
+    /* transition: var(--transition); */
 }
 
 .services .item:hover::after {

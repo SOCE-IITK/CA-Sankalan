@@ -20,8 +20,9 @@ const Portfolio = () => {
           <div className="section-t text-center">
             <h3
               style={{
-                fontSize: "40px",
+                fontSize: "50px",
                 fontWeight: "600",
+                fontFamily: "'Open Sans', sans-serif",
                 lineHeight: "1.2",
                 background: "black",
                 WebkitBackgroundClip: "text",
@@ -47,11 +48,25 @@ const Portfolio = () => {
                   style={{
                     background: `url(${portfolio.image})`,
                     backgroundSize: "cover",
+                    backgroundPosition: "center",
                   }}
                   key={portfolio.id}
                 >
-                  <div className="item-title fs-25 fw-6">{portfolio.title}</div>
-                  <div className="text text-white">{portfolio.text}</div>
+                  <div className="item-title fs-25 fw-6">
+                    <p style={{ fontFamily: "'Open Sans', sans-serif" }}>
+                      {portfolio.title}
+                    </p>
+                  </div>
+                  <div className="text text-white">
+                    <p
+                      style={{
+                        fontFamily:
+                          "SF Pro Display, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+                      }}
+                    >
+                      {portfolio.text}
+                    </p>
+                  </div>
                 </div>
               );
             })}

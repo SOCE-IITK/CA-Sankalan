@@ -9,7 +9,7 @@ const About = () => {
       <div className="container">
         <div className="about-content grid text-center">
           <div className="content-left">
-            <img src={logo} style={{ background: "black" }} alt="" />
+            <img src={logo} alt="" />
           </div>
           <div className="content-right">
             <div className="section-t">
@@ -17,6 +17,7 @@ const About = () => {
                 style={{
                   fontSize: "40px",
                   fontWeight: "600",
+                  fontFamily: "'Open Sans', sans-serif",
                   lineHeight: "1.2",
                   background: "black",
                   WebkitBackgroundClip: "text",
@@ -28,7 +29,12 @@ const About = () => {
             </div>
             <p
               className="text"
-              style={{ textAlign: "justify", color: "black" }}
+              style={{
+                textAlign: "justify",
+                color: "black",
+                fontFamily:
+                  "SF Pro Display, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+              }}
             >
               The Civil Engineering Conclave Sankalan, organized by the Society
               of Civil Engineering, is a vibrant two-day event designed to
