@@ -12,7 +12,7 @@ const SingleService = ({ service }) => {
         className="item-title fs-25"
         style={{
           fontFamily: "'Open Sans', sans-serif",
-          textDecoration: "underline",
+          fontWeight: "400",
         }}
       >
         {service.title}

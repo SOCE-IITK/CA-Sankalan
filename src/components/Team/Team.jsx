@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import "./Team.css";
 import {
   FaLinkedin,
@@ -25,9 +25,27 @@ import shambhavi from "./Core-Team/shambhavi.jpg";
 import vedant from "./Core-Team/vedant.jpg";
 import shubhamphd from "./Core-Team/shubhamphd.jpg";
 import About from "./../About/About";
+import slider from "../../assets/images/ca-portal-slide.png";
 
 export default function Team() {
   const iconSize = 30;
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const aboutSection = document.getElementById("contact"); // Replace with the actual ID of the component
+    const scrollPosition = window.scrollY + window.innerHeight;
+
+    if (aboutSection && scrollPosition > aboutSection.offsetTop) {
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <section
@@ -43,6 +61,20 @@ export default function Team() {
           backgroundPosition: "center",
         }}
       >
+        <div
+          className={`slide-in-image ${isVisible ? "visible" : ""}`}
+          style={{
+            maxHeight: "100px",
+            marginTop: "-45px",
+            marginBottom: "2px",
+          }}
+        >
+          <img
+            src={slider}
+            alt="Slide"
+            style={{ maxHeight: "100px", marginBottom: "2px" }} // Adjust the maxHeight as needed
+          />
+        </div>
         <div className="cards" data-aos="fade-up" data-aos-delay="300">
           <h1
             style={{

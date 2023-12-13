@@ -1,11 +1,39 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import "./About.css";
 import images from "../../constants/images";
 import logo from "./sankalan-logo.png";
+import slider from "../../assets/images/ca-portal-slide.png";
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const aboutSection = document.getElementById("about"); // Replace with the actual ID of the component
+    const scrollPosition = window.scrollY + window.innerHeight;
+
+    if (aboutSection && scrollPosition > aboutSection.offsetTop) {
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <section className="about section-p" id="about">
+      <div
+        className={`slide-in-image ${isVisible ? "visible" : ""}`}
+        style={{ maxHeight: "100px", marginTop: "-100px" }}
+      >
+        <img
+          src={slider}
+          alt="Slide"
+          style={{ maxHeight: "100px", marginBottom: "-0px" }} // Adjust the maxHeight as needed
+        />
+      </div>
       <div className="container">
         <div className="about-content grid text-center">
           <div className="content-left">

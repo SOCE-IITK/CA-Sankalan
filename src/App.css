@@ -383,6 +383,19 @@ select {
   margin: 18px 0;
 }
 
+.slide-in-image {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 1s ease;
+
+  /* Adjusted transition duration */
+}
+
+.slide-in-image.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media screen and (min-width: 768px) {
   .section-t {
     text-align: left;
