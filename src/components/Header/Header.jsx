@@ -1,8 +1,6 @@
 import React from "react";
 import "./Header.css";
 import { FaPaperPlane } from "react-icons/fa";
-import { Particles } from "react-tsparticles";
-import StarfieldAnimation from "react-starfield-animation"; // Import the StarfieldAnimation component
 
 const Header = () => {
   const particlesInit = (main) => {
@@ -43,39 +41,6 @@ const Header = () => {
 
   return (
     <header className="header flex flex-center flex-column">
-      <StarfieldAnimation
-        style={{
-          zIndex: 2,
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-        }}
-      />
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          particles: {
-            number: {
-              value: 50,
-            },
-            size: {
-              value: 3,
-            },
-          },
-          interactivity: {
-            events: {
-              onhover: {
-                enable: true,
-                mode: "repulse",
-              },
-            },
-          },
-        }}
-      />
       <div className="container">
         <div className="header-content text-center flex flex-column">
           <h1 className="header-title">Campus Ambassador</h1>
