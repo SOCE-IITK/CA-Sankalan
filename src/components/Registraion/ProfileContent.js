@@ -1,73 +1,131 @@
-// ProfileContent.js
-
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import styled from "styled-components";
+import {
+  FaUser,
+  FaEnvelope,
+  FaPhone,
+  FaWhatsapp,
+  FaUniversity,
+  FaCity,
+  FaHome,
+  FaGraduationCap,
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaVenusMars,
+  FaIdBadge,
+} from "react-icons/fa";
 
 const UnderlinedHeading = styled.h2`
-  text-decoration: underline;
+  text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
+  color: #4a90e2;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+`;
 
-  @media (max-width: 768px) {
-    margin-top: 200px;
+const ProfileItem = styled.p`
+  font-size: 16px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+  & strong {
+    color: #2b5876;
+    flex: 0 0 150px;
   }
 `;
 
+const NoDataMessage = styled.p`
+  text-align: center;
+  margin-top: 20px;
+  color: #ff6f61;
+  font-size: 18px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+`;
+
+const iconStyle = {
+  color: "#4a90e2",
+  flexShrink: 0,
+};
+
 const ProfileContent = ({ userData }) => {
   const caId = userData?.caId || uuidv4();
+
   return (
     <div>
-      <UnderlinedHeading>Profile Details</UnderlinedHeading>
-      {userData && (
-        <div>
-          <p>
+      <UnderlinedHeading> Profile Details </UnderlinedHeading>
+      {userData ? (
+        <>
+          <ProfileItem>
+            <FaUser style={iconStyle} />
             <strong>Name:</strong> {userData.name}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaEnvelope style={iconStyle} />
             <strong>Email:</strong> {userData.email}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaPhone style={iconStyle} />
             <strong>Phone:</strong> {userData.phone}
-          </p>
-          <p>
-            <strong>Whatsapp:</strong> {userData.whatsapp}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaWhatsapp style={iconStyle} />
+            <strong>WhatsApp:</strong> {userData.whatsapp}
+          </ProfileItem>
+          <ProfileItem>
+            <FaVenusMars style={iconStyle} />
             <strong>Gender:</strong> {userData.gender}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaUniversity style={iconStyle} />
             <strong>College:</strong> {userData.college}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaCity style={iconStyle} />
             <strong>College City:</strong> {userData.collegecity}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaHome style={iconStyle} />
             <strong>Address:</strong> {userData.address}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaGraduationCap style={iconStyle} />
             <strong>Year of Study:</strong> {userData.yos}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaInstagram style={iconStyle} />
             <strong>Instagram ID:</strong> {userData.insta || "Not provided"}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaFacebook style={iconStyle} />
             <strong>Facebook ID:</strong> {userData.facebook || "Not provided"}
-          </p>
-          <p>
-            <strong>Linkedin ID:</strong> {userData.linkedin || "Not provided"}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaLinkedin style={iconStyle} />
+            <strong>LinkedIn ID:</strong> {userData.linkedin || "Not provided"}
+          </ProfileItem>
+          <ProfileItem>
+            <FaTwitter style={iconStyle} />
             <strong>Twitter/X ID:</strong>{" "}
             {userData.twitter_x || "Not provided"}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaIdBadge style={iconStyle} />
             <strong>Your CA ID:</strong> {caId}
-          </p>
-          <p>
+          </ProfileItem>
+          <ProfileItem>
+            <FaIdBadge style={iconStyle} />
             <strong>Referrer CA ID:</strong>{" "}
             {userData.referrer || "Not provided"}
-          </p>
-        </div>
+          </ProfileItem>
+        </>
+      ) : (
+        <NoDataMessage>No user data available. 😞</NoDataMessage>
       )}
     </div>
   );
