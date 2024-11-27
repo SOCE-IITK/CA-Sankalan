@@ -7,6 +7,7 @@ import { get, ref, getDatabase, onValue } from "firebase/database";
 import ProfileContent from "./ProfileContent";
 import TasksContent from "./TasksContent";
 import LeaderboardContent from "./LeaderboardContent";
+import WhatsappContent from "./WhatsappContent";
 import { FaHome, FaSignOutAlt } from "react-icons/fa";
 
 // Styled component
@@ -97,7 +98,6 @@ const Dashboard = () => {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    // Fetch user data from the database
     const userRef = ref(getDatabase(), "users/" + auth.currentUser.uid);
 
     onValue(userRef, (snapshot) => {
@@ -126,6 +126,8 @@ const Dashboard = () => {
         return <TasksContent />;
       case "leaderboard":
         return <LeaderboardContent />;
+      case "whatsapp":
+        return <WhatsappContent />;
       default:
         return null;
     }
@@ -161,6 +163,12 @@ const Dashboard = () => {
           onClick={() => setActiveTab("leaderboard")}
         >
           Leaderboard
+        </Tab>
+        <Tab
+          active={activeTab === "whatsapp"}
+          onClick={() => setActiveTab("whatsapp")}
+        >
+          WhatsApp
         </Tab>
       </TabsContainer>
       <ContentContainer>{renderTabContent()}</ContentContainer>
