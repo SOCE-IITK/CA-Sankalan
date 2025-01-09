@@ -54,7 +54,7 @@ const Header = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            SANKALAN'24
+            SANKALAN'25
           </h3>
           <p className="text-lead">
             Civil Engineering Conclave-Sankalan by SoCE IIT Kanpur invites
