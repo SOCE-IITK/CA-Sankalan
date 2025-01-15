@@ -1,38 +1,38 @@
 /* About.css */
 
 .about-content {
-    row-gap: 40px;
+  row-gap: 40px;
 }
 
 #about {
-    background: url("../../assets/images/2.png") center/cover no-repeat;
-    position: relative;
-    z-index: 1;
+  background: url("../../assets/images/22.png") center/cover no-repeat;
+  position: relative;
+  z-index: 1;
 }
 
 .slide-in-image {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 1s ease;
 
-    /* Adjusted transition duration */
+  /* Adjusted transition duration */
 }
 
 .slide-in-image.visible {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media screen and (min-width: 768px) {
-    .about-content {
-        text-align: left;
-    }
+  .about-content {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .about-content {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        column-gap: 60px;
-    }
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 60px;
+  }
 }
