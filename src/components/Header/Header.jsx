@@ -13,10 +13,7 @@ const Header = () => {
             Civil Engineering Conclave-Sankalan by SoCE IIT Kanpur invites
             Campus Ambassadors. Register for this opportunity now!
           </p>
-          <a
-            href="/glogin"
-            className="btn header-btn modern-btn"
-          >
+          <a href="/glogin" className="btn header-btn modern-btn">
             <FaPaperPlane /> <span>Register Here</span>
           </a>
         </div>
