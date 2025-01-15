@@ -10,6 +10,8 @@ import Footer from "./components/Footer/footer";
 import ContactCard from "./components/contactcard";
 import Contact from "./components/contact";
 import Team from "./components/Team/Team";
+import AnimatedBackground from "./components/Header/ParticleLayer";
+
 
 function App() {
   return (
@@ -20,9 +22,12 @@ function App() {
       <Services />
       <Portfolio />
       <Team />
+  
       {/* <Contact /> */}
       <Footer />
+      
     </div>
+
   );
 }
 
