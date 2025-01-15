@@ -15,14 +15,14 @@ import partha from "./Core-Team/parthasir.jpeg";
 import cksahu from "./Core-Team/cksahu.jpg";
 import prabin from "./Core-Team/Prabin-Ashish.jpg";
 import shubham from "./Core-Team/shubham.jpeg";
-import shrey from "./Core-Team/shrey.jpg";
-import sandipan from "./Core-Team/sandipan.jpg";
+import shrey from "./Core-Team/Finance_lokesh.jpg";
+import Pranay from "./Core-Team/Pranay_events.jpg";
 import saurabh from "./Core-Team/saurabh.jpg";
 import baban from "./Core-Team/baban.jpg";
 import aditya from "./Core-Team/aditya.jpg";
 import aadya from "./Core-Team/aadya.jpg";
 import shambhavi from "./Core-Team/shambhavi.jpg";
-import vedant from "./Core-Team/vedant.jpg";
+import sahil from "./Core-Team/Sahil Arolia.jpg";
 import shubhamphd from "./Core-Team/shubhamphd.jpg";
 import About from "./../About/About";
 import slider from "../../assets/images/ca-portal-slide.png";
@@ -94,32 +94,32 @@ export default function Team() {
               style={{ marginBottom: "20px", minHeight: "350px" }}
             >
               <div className="image">
-                <img src={vedant} alt="" />
+                <img src={sahil} alt="" />
               </div>
               <div className="text">
-                <p className="name">Vedant Adlak </p>
+                <p className="name">Sahil Arolia </p>
 
                 <p className="no">
-                  <i>+91-7000305702</i>
+                  <i>+91-7389959652</i>
                 </p>
               </div>
               <div className="links">
                 <a
-                  href="mailto:vedanta21@iitk.ac.in"
+                  href="mailto:asahil22@iitk.ac.in"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaEnvelope size={iconSize} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/vedant-adlak-4158a8257"
+                  href= "https://www.linkedin.com/in/sahil-arolia-1a2bb8259"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin size={iconSize} />
                 </a>
                 <a
-                  href="https://instagram.com/vedant_adlak21?igshid=NGExMmI2YTkyZg=="
+                  href="https://instagram.com/sahil_arolia?igshid=ZDc4ODBmNjlmNQ== "
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -135,29 +135,29 @@ export default function Team() {
                 <img src={shrey} alt="" />
               </div>
               <div className="text">
-                <p className="name">Shrey Patel</p>
+                <p className="name">Lokesh Sunda</p>
 
                 <p className="no">
-                  <i>+91-9695970917</i>
+                  <i>+91-8741811383</i>
                 </p>
               </div>
               <div className="links">
                 <a
-                  href="mailto:shreypatel21@iitk.ac.in"
+                  href="mailto:lokeshs22@iitk.ac.in"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaEnvelope size={iconSize} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/shrey-patel-830bb164/"
+                  href="https://www.linkedin.com/in/lokesh-sunda-7b0773260/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin size={iconSize} />
                 </a>
                 <a
-                  href="https://www.instagram.com/shreypatel1408/"
+                  href="https://www.instagram.com/lokeshkumarsunda?igsh=NG05NzRiMGVubHQ4"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -170,32 +170,32 @@ export default function Team() {
               style={{ marginBottom: "20px", minHeight: "350px" }}
             >
               <div className="image">
-                <img src={sandipan} alt="" />
+                <img src={Pranay} alt="" />
               </div>
               <div className="text">
-                <p className="name">Sandipan Dutta</p>
+                <p className="name">Pranay Saxena</p>
 
                 <p className="no">
-                  <i>+91-7906379797</i>
+                  <i>+91-8769639498</i>
                 </p>
               </div>
               <div className="links">
                 <a
-                  href="mailto:sadipand21@iitk.ac.in"
+                  href="mailto:pranays22@iitk.ac.in"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaEnvelope size={iconSize} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/sandipan-dutta-6a03b6237/"
+                  href= "https://www.linkedin.com/in/pranay-saxena-0971aa258/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedin size={iconSize} />
                 </a>
                 <a
-                  href="https://www.instagram.com/imsandipandutta03/"
+                  href="https://www.instagram.com/pranay_s22/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

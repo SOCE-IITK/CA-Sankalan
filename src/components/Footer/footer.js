@@ -4,81 +4,59 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div
+    <footer
       className="footer_component"
       style={{
-        backgroundImage: `url(${require("../../assets/images/3.png")})`,
-        backgroundSize: "cover", // Make background image cover the container
-        backgroundPosition: "center", // Center the background image
-        height: "90vh",
-        zIndex: "1",
+        background: "linear-gradient(135deg,rgb(1, 13, 36),rgb(3, 17, 41))", // Modern gradient background
+        color: "white",
+        padding: "40px 20px",
       }}
     >
-      <footer
+      {/* Decorative Line */}
+      <hr
         style={{
-          backgroundImage: `url(${require("../../assets/images/3.png")})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "90vh",
-          zIndex: "1",
+          margin: "0 auto 20px",
+          border: "1px solid white",
+          width: "80%",
+          opacity: 0.7,
         }}
-      >
-        <hr
-          style={{
-            marginTop: "0.01%",
-            marginBottom: "10px",
-            border: "2px solid white", // Adjust the thickness by changing the pixel value
-            width: "60%",
-          }}
-        />
+      />
 
-        <div className="container grid grid-two-column">
-          <div className="footer-social" style={{ marginBottom: "30px" }}>
-            <div className="footer-social--icons">
-              <div className="icon">
-                <a href="https://www.facebook.com/soce.iitk" target="_blank">
-                  <FaFacebook size={70} className="icons ifb" />
-                </a>
-              </div>
-
-              <div className="icon">
-                <a
-                  href="https://www.instagram.com/soce.iitk/?hl=en"
-                  target="_blank"
-                >
-                  <FaInstagram size={70} className="icons iinsta" />
-                </a>
-              </div>
-              <div className="icon">
-                <a
-                  href="https://www.linkedin.com/company/79725097/admin/feed/posts/"
-                  target="_blank"
-                >
-                  <FaLinkedin size={70} className="icons itwit" />
-                </a>
-              </div>
-              <div className="icon">
-                <a
-                  href="https://www.youtube.com/@societyofcivilengineersiit3172"
-                  target="_blank"
-                >
-                  <FaYoutube size={70} className="icons iyt" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="footer-copyright-box">
-            <p className="footer-p">
-              Copyright © 2023-24 All Rights Reserved by{" "}
-              <a href="https://soceiitk.org/" id="company">
-                SoCE, IIT Kanpur
-              </a>
-            </p>
-          </div>
+      {/* Social Media Section */}
+      <div className="footer-social" style={{ textAlign: "center", marginBottom: "20px" }}>
+        <h3 style={{ marginBottom: "20px", fontWeight: "bold", fontSize: "3rem" }}>
+          Follow Us
+        </h3>
+        <div className="footer-social--icons" style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
+          <a href="https://www.facebook.com/soce.iitk" target="_blank" rel="noreferrer">
+            <FaFacebook size={50} className="icons ifb" />
+          </a>
+          <a href="https://www.instagram.com/soce.iitk/?hl=en" target="_blank" rel="noreferrer">
+            <FaInstagram size={50} className="icons iinsta" />
+          </a>
+          <a href="https://www.linkedin.com/company/79725097/admin/feed/posts/" target="_blank" rel="noreferrer">
+            <FaLinkedin size={50} className="icons ilinkedin" />
+          </a>
+          <a href="https://www.youtube.com/@societyofcivilengineersiit3172" target="_blank" rel="noreferrer">
+            <FaYoutube size={50} className="icons iyt" />
+          </a>
         </div>
-      </footer>
-    </div>
+      </div>
+
+      {/* Copyright Section */}
+      <div className="footer-copyright-box" style={{ textAlign: "center" }}>
+        <p style={{ marginBottom: "5px", fontSize: "2rem", opacity: 0.8 }}>
+          Copyright © 2023-24 All Rights Reserved by{" "}
+          <a
+            href="https://soceiitk.org/"
+            id="company"
+            style={{ textDecoration: "none", color: "#FFD700", fontWeight: "bold" }}
+          >
+            SoCE, IIT Kanpur
+          </a>
+        </p>
+      </div>
+    </footer>
   );
 };
 
